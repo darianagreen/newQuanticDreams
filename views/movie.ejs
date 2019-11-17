@@ -1,0 +1,18 @@
+<% include partials/header.ejs %>
+<div class="container-fluid">
+    <div class="row h-100">
+        <div class="col-sm-2 min-vh-100 bg-dark">
+            <% include partials/movie-sidebar.ejs %>
+        </div>
+        <div class="col-sm-10 bg-light sticky-top">
+            <div class="card border-secondary h-25 w-25">
+                <img class="card-img-top img-thumbnail" src="https://image.tmdb.org/t/p/w300<%= movie.poster_path %>" alt="Card image cap"></a>
+                <div class="card-body">
+                    <h6 class="card-title">Title: <%= movie.original_title %></h6>
+                    <p class="card-text">Overview: <%= movie.overview %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% include partials/footer.ejs %>

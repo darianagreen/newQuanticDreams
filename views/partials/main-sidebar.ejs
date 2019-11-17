@@ -1,0 +1,21 @@
+<div class="row" id="sidebar-header">
+    <div class="col-sm-12">
+        <h1 class="text-center">Sidebar header</h1>
+    </div>
+</div>
+<div class="row sticky-top" id="sidebar-body">
+    <div class="col-sm-12">
+        <h1 class="text-center"><%= user.username %>`s Page</h1>
+        <br>
+        <form class="form-inline">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search for ..." id="input_search">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" id="button_search"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+    </div>
+</div>
